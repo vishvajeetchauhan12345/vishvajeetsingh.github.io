@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en" lang="hi">
+<head>
+	<title>vishvash</title>
+	<meta name="viewport" content="width=100%, initial-scale=1">
+	<meta charset="UTF-8">
+</head>
+<style type="text/css">
+	 body{
+    background:#ddd;
+  }
+html {
+  scroll-behavior: smooth;
+}
+	.panel1{
+		position: absolute;
+		width:100%;
+		height: 8%;
+		background: purple;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		left:0px;
+		top:0px;
+	}
+
+.t1{
+	position: absolute;
+	top:100px;
+	left: 400px;
+	width: 0px;
+    height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid blue;
+}
+.t2{
+	position: absolute;
+	top:116px;
+	left: 383px;
+	width: 0px;
+    height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid red;
+	transform: rotate(50deg);
+}
+.t3{
+	position: absolute;
+	top:116px;
+	left: 417px;
+	width: 0px;
+    height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid red;
+	transform: rotate(-50deg);
+}
+.t4{
+	position: absolute;
+	top:144px;
+	left: 422px;
+	width: 0px;
+    height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid green;
+	transform: rotate(122deg);
+}
+.t5{
+	position: absolute;
+	top:144px;
+	left: 378px;
+	width: 0px;
+    height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid green;
+	transform: rotate(-122deg);
+}
+.t6{
+	position: absolute;
+	top:156px;
+	left: 400px;
+	width: 0px;
+    height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid blue;
+	transform: rotate(180deg);	
+}
+.circle1{
+	position: relative;
+	margin-top: -110px;
+	margin-left: -370px;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	border:2px solid red;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropbtn1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 7px;
+  font-size: 12px;
+  border: none;
+  margin: 10px;
+  margin-left: 120px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;margin:-11px;margin-left: 80px;}
+
+.dropdown:hover .dropbtn1 {background-color: #3e8e41;}
+
+.dropbtn2{
+	background-color: #4CAF50;
+	border:none;
+	font-size: 12px;
+	padding: 7px;
+	color: white;
+	margin-left:50px;
+}
+.dropdown2{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content2{
+	position: absolute;
+	display: none;
+	width:150px;
+	background-color: #f1f1f1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content2 a{
+	color: black;
+	display: block;
+	text-decoration: none;
+	padding:8px 12px;
+}
+.dropdown-content2 a:hover{background-color: #ddd}
+.dropdown2:hover .dropdown-content2{display: block;margin:0px;margin-left: 10px;}
+.dropdown2:hover .dropbtn2{background-color:#3e8e41;}
+
+.dropbtn3{
+	background-color:#4CAF50;
+	padding: 7px;
+	font-size: 12px;
+	color: white;
+	margin-left:50px;
+	border:none;
+}
+.dropdown3{
+ position: relative;
+ display: inline-block;
+}
+.dropdown-content3{
+	position: absolute;
+	background-color: #f1f1f1;
+	display: none;
+	width:250px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content3 a{
+	display: block;
+	padding: 8px 12px;
+	color: black;
+	text-decoration: none;
+}
+.dropdown-content3 a:hover{background-color: #ddd}
+.dropdown3:hover .dropdown-content3{display: block;margin:0px;margin-left: -28px;}
+.dropdown3:hover .dropbtn3{background-color: #3e8e41;}
+
+.dropbtn4{
+	background-color: #4CAF50;
+	border:none;
+	padding: 7px;
+	font-size:12px;
+	color:white;
+	margin-left: 50px;
+}
+.dropdown4{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content4{
+	background-color: #f1f1f1;
+	position: absolute;
+	width: 150px;
+	display: none;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content4 a{
+	color: black;
+	padding: 8px 12px;
+	display: block;
+	text-decoration: none;
+}
+.dropdown-content4 a:hover{background-color: #ddd;}
+.dropdown4:hover .dropdown-content4{display: block;margin:0px;margin-left: 12px;}
+.dropdown4:hover .dropbtn4{background-color: #3e8e41;}
+
+.dropbtn5{
+	background-color: #4CAF50;
+	font-size: 12px;
+	padding:7px;
+	color: white;
+	border:none;
+	margin-left: 50px;
+}
+.dropdown5{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content5{
+	position: absolute;
+	background-color: #f1f1f1;
+	display: none;
+	width:150px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content5 a{
+	color: black;
+	padding: 8px 12px;
+	display: block;
+	text-decoration: none;
+}
+.dropdown-content5 a:hover{background-color: #ddd;}
+.dropdown5:hover .dropdown-content5{display: block;margin:0px;margin-left: 10px;}
+.dropdown5:hover .dropbtn5{background-color: #3e8e41;}
+
+.dropbtn6{
+	background-color: #4CAF50;
+	color: white;
+	padding: 7px;
+	font-size: 12px;
+	border:none;
+	margin-left:50px;
+}
+.dropdown6{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content6{
+	position: absolute;
+	display: none;
+	background-color: #f1f1f1;
+	width:150px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content6 a{
+	color: black;
+	padding: 8px 12px;
+	display: block;
+	text-decoration: none;
+}
+.dropdown-content6 a:hover{background-color: #ddd;}
+.dropdown6:hover .dropdown-content6{display: block;margin:0px;margin-left: 0px;}
+.dropdown6:hover .dropbtn6{background-color: #3e8e41;}
+
+.dropbtn7{
+	background-color: #4CAF50;
+	padding: 7px;
+	font-size: 12px;
+	border:none;
+	margin-left: 50px;
+	color:white;
+}
+.dropdown7{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content7{
+	position: absolute;
+	background-color: #f1f1f1;
+	display: none;
+	width:150px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content7 a{
+	color: black;
+	display: block;
+	padding: 8px 12px;
+	text-decoration: none;
+}
+.dropdown-content7 a:hover{background-color: #ddd;}
+.dropdown7:hover .dropdown-content7{display: block;margin:0px;margin-left: 10px;}
+.dropdown7:hover .dropbtn7{background-color: #3e8e41;}
+
+.dropbtn8{
+	background-color: #4CAF50;
+	padding: 7px;
+	color: white;
+	border:none;
+	font-size: 12px;
+	margin-left: 50px;
+}
+.dropdown8{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content8{
+	background-color: #f1f1f1;
+	width:150px;
+	position: absolute;
+	display: none;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content8 a{
+	color: black;
+	padding: 8px 12px;
+	display: block;
+	text-decoration: none;
+}
+.dropdown-content8 a:hover{background-color: #ddd;}
+.dropdown8:hover .dropdown-content8{display: block;margin:0px;margin-left: 22px;}
+.dropdown8:hover .dropbtn8{background-color: #3e8e41;}
+
+/*.core3{
+	    position: absolute;
+	    top:5px;
+		border-left: 20px solid green;
+	    border-right: 20px solid red;
+	    border-top: 20px solid yellow;
+	    border-bottom: 20px solid blue;
+		border-radius: 20px;
+		/*background-image: linear-gradient(red,white,green);*/
+	/*	box-shadow: 0px 2px 8px 0px;
+		margin-left: 1140px;
+		text-align: center;
+		font-size: 18px;
+	    animation-duration: 2s;
+	    animation-name: core3move;
+	    animation-iteration-count: infinite;
+	    animation-play-state: all;transform: center;
+      }
+      @keyframes core3move{
+      from{transform:rotateX(0deg);}
+      to{transform:rotateX(360deg);}
+   }
+	.core3:hover{
+		width:200px;
+		border-left: 2px solid green;
+	    border-right: 2px solid red;
+	    border-top: 2px solid yellow;
+	    border-bottom: 2px solid blue;
+		border-radius: 2px;
+		float: left;
+		height: 40px;
+	   }
+	.core3 input{position: relative;
+		display: none;
+		transform: center;
+	}
+	.core3 input:hover{
+		transform-origin: initial;
+		transition-duration: 3s;
+		transition-delay: 2s;
+	}
+	.core3:hover input{display: block;
+		margin-left: 0px;
+	}
+*/
+.panel2{
+	position: absolute;
+	width: 80%;
+	height: 50%;
+	background-color: white;
+	border-left: 10px solid blue;
+	border-right: 10px solid blue;
+	margin:10%;
+	padding: 20px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.para1{
+	position: absolute;
+	margin-top:700px;
+	width: 90%;
+	height: 30%;
+	margin-left: 95px;
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.panel3{
+	position: absolute;
+	width:96%;
+	padding: 20px;
+	background-color: white;
+	margin-top: 1000px;
+	margin-left:2%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+td{
+	text-align: center;
+	width: 200px;
+	height: 220px;
+	border:2px solid green;
+	font-size: 18px;
+	background-color: white;
+	color: black;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	text-align: bottom;
+}
+.panel3 td p{
+	background-color: red;
+	color: white;
+	width:100%;
+	text-align: center;
+	float: left;
+}
+.panel3 td h4{
+	font-family: courier;
+}
+.panel3 td img{
+	width: 200px;
+	height: 200px;
+}
+.panel3 td span{
+	position: absolute;margin-top: 200px;text-align: center;margin-left: -240px;
+	font-family: courier;
+	font-size: 14px;
+	font-weight: 20px;
+}
+.panel3 td:hover{
+	box-shadow:0px 8px 16px 0px;
+	background-color: red;
+	padding: 5px;
+}
+
+.panel3 tr td img:hover{
+	display: inline-block;
+	overflow-y:visible; ;
+	/*padding: 12px;*/
+	box-shadow: 1px 8px 16px 1px;
+}
+
+.para2{
+	position: absolute;
+	margin-top:2000px;
+	width: 90%;
+	height: 45%;
+	margin-left: 95px;
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.t10{
+	position: absolute;
+	top:100px;
+	left: 400px;
+	width: 0px;
+    height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid blue;
+}
+
+.t20{
+	position: absolute;
+	top:116px;
+	left: 383px;
+	width: 0px;
+    height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid red;
+	transform: rotate(50deg);
+}
+
+.t30{
+	position: absolute;
+	top:116px;
+	left: 417px;
+	width: 0px;
+    height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid red;
+	transform: rotate(-50deg);
+}
+
+.t40{
+	position: absolute;
+	top:144px;
+	left: 422px;
+	width: 0px;
+    height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid green;
+	transform: rotate(122deg);
+}
+
+.t50{
+	position: absolute;
+	top:144px;
+	left: 378px;
+	width: 0px;
+    height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid green;
+	transform: rotate(-122deg);
+}
+
+.t60{
+	position: absolute;
+	top:156px;
+	left: 400px;
+	width: 0px;
+    height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid blue;
+	transform: rotate(180deg);
+}
+
+/*.circle2{
+	position: relative;
+	margin-top: -110px;
+	margin-left: -370px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}*/
+.tri2{
+	position: relative;
+	margin-top: -110px;
+	margin-left: -370px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.panel4{
+	position: absolute;
+	width:94%;
+	background-color: yellow;
+	padding: 35px;
+	margin-top: 2400px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.panel4-heading{
+	background-color: blue;
+	margin-left: -2px;
+	padding:10px;
+	width:96%;
+	margin-top: -1px;
+	color:white;
+}
+.panel4-heading strong{
+	font-size: 18px;
+}
+.panel4 table tr td img{
+	width:100%;
+	height: 90%;
+	margin-left:0px;
+	margin-top: 5px;
+}
+.dilpanel{
+		position: absolute;
+		padding: 15px;
+		margin-top: 2800px;
+		margin-left: 30%;
+	}
+
+	.panel5{
+		position: absolute;
+		width:98%;
+		height:50%;
+		box-shadow: 0px 16px 16px 0px rgba(120,120,120,120);
+		margin-top: 3200px;
+		margin-left: 1%;
+		background-color: green;
+		text-align: center;
+		display: inline-block;
+	}
+	.panel5 h1{
+		text-align: top;
+		position: absolute;
+		font-weight: 40px;
+		color: white;
+		margin-left:30%;
+	}
+	.panel5 .s1{
+		position: absolute;
+		display: inline;
+		width: 180px;
+		height: 180px;
+		text-align: center;
+		color: black;
+		float: left;
+		margin-left: -655px;
+		margin-top: 70px;
+	}
+	.panel5 .s1 img{
+		border-image: center;
+		margin-top: 10px;
+	}
+	.panel5 .n1{
+		position: absolute;
+		display: none;
+		text-align: bottom;
+		margin-top: 110px;
+		margin-left: -120px;
+		background-color: red;
+		width:140px;
+	} 
+	.panel5 .s1:hover .n1{
+		display: block;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.panel5 .s1:hover{
+		box-shadow: 0px 8px 16px 0px;
+		background-color: white;
+	}
+  .panel5 .s1 button{
+  	position: absolute;
+  	background:none;
+  	outline: none;
+  	text-align: center;
+  	padding: 5px 8px;
+  	margin-top: 50px;
+  	margin-left: -20px;
+  	font-weight:100px;
+  }
+  .panel5 .s1 button:hover{
+  	background-color: red;
+  	color: white;
+  	font-size: courier;
+  }
+
+
+  .panel5 .s2{
+		position: absolute;
+		display: inline;
+		width: 180px;
+		height: 180px;
+		text-align: center;
+		color: black;
+		float: left;
+		margin-left: -470px;
+		margin-top: 70px;
+	}
+	.panel5 .s2 img{
+		border-image: center;
+		margin-top: 10px;
+	}
+	.panel5 .n2{
+		position: absolute;
+		display: none;
+		text-align: bottom;
+		margin-top: 110px;
+		margin-left: -120px;
+		background-color: red;
+		width:140px;
+	} 
+	.panel5 .s2:hover .n2{
+		display: block;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.panel5 .s2:hover{
+		box-shadow: 0px 8px 16px 0px;
+		background-color: white;
+	}
+  .panel5 .s2 button{
+  	position: absolute;
+  	background:none;
+  	outline: none;
+  	text-align: center;
+  	padding: 5px 8px;
+  	margin-top: 50px;
+  	margin-left: -20px;
+  	font-weight:100px;
+  }
+  .panel5 .s2 button:hover{
+  	background-color: red;
+  	color: white;
+  	font-size: courier;
+  }
+
+ .panel5 .s3{
+		position: absolute;
+		display: inline;
+		width: 180px;
+		height: 180px;
+		text-align: center;
+		color: black;
+		float: left;
+		margin-left: -285px;
+		margin-top: 70px;
+	}
+	.panel5 .s3 img{
+		border-image: center;
+		margin-top: 10px;
+	}
+	.panel5 .n3{
+		position: absolute;
+		display: none;
+		text-align: bottom;
+		margin-top: 110px;
+		margin-left: -120px;
+		background-color: red;
+		width:140px;
+	} 
+	.panel5 .s3:hover .n3{
+		display: block;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.panel5 .s3:hover{
+		box-shadow: 0px 8px 16px 0px;
+		background-color: white;
+	}
+  .panel5 .s3 button{
+  	position: absolute;
+  	background:none;
+  	outline: none;
+  	text-align: center;
+  	padding: 5px 8px;
+  	margin-top: 50px;
+  	margin-left: -20px;
+  	font-weight:100px;
+  }
+  .panel5 .s3 button:hover{
+  	background-color: red;
+  	color: white;
+  	font-size: courier;
+  }
+
+.panel5 .s4{
+		position: absolute;
+		display: inline;
+		width: 180px;
+		height: 180px;
+		text-align: center;
+		color: black;
+		float: left;
+		margin-left: -95px;
+		margin-top: 70px;
+	}
+	.panel5 .s4 img{
+		border-image: center;
+		margin-top: 10px;
+	}
+	.panel5 .n4{
+		position: absolute;
+		display: none;
+		text-align: bottom;
+		margin-top: 110px;
+		margin-left: -120px;
+		background-color: red;
+		width:140px;
+	} 
+	.panel5 .s4:hover .n4{
+		display: block;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.panel5 .s4:hover{
+		box-shadow: 0px 8px 16px 0px;
+		background-color: white;
+	}
+  .panel5 .s4 button{
+  	position: absolute;
+  	background:none;
+  	outline: none;
+  	text-align: center;
+  	padding: 5px 8px;
+  	margin-top: 50px;
+  	margin-left: -20px;
+  	font-weight:100px;
+  }
+  .panel5 .s4 button:hover{
+  	background-color: red;
+  	color: white;
+  	font-size: courier;
+  }
+
+  .panel5 .s5{
+		position: absolute;
+		display: inline;
+		width: 180px;
+		height: 180px;
+		text-align: center;
+		color: black;
+		float: left;
+		margin-left: 95px;
+		margin-top: 70px;
+	}
+	.panel5 .s5 img{
+		border-image: center;
+		margin-top: 10px;
+	}
+	.panel5 .n5{
+		position: absolute;
+		display: none;
+		text-align: bottom;
+		margin-top: 110px;
+		margin-left: -120px;
+		background-color: red;
+		width:140px;
+	} 
+	.panel5 .s5:hover .n5{
+		display: block;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.panel5 .s5:hover{
+		box-shadow: 0px 8px 16px 0px;
+		background-color: white;
+	}
+  .panel5 .s5 button{
+  	position: absolute;
+  	background:none;
+  	outline: none;
+  	text-align: center;
+  	padding: 5px 8px;
+  	margin-top: 50px;
+  	margin-left: -20px;
+  	font-weight:100px;
+  }
+  .panel5 .s5 button:hover{
+  	background-color: red;
+  	color: white;
+  	font-size: courier;
+  }
+
+  .panel5 .s6{
+		position: absolute;
+		display: inline;
+		width: 180px;
+		height: 180px;
+		text-align: center;
+		color: black;
+		float: left;
+		margin-left: 280px;
+		margin-top: 70px;
+	}
+	.panel5 .s6 img{
+		border-image: center;
+		margin-top: 10px;
+	}
+	.panel5 .n6{
+		position: absolute;
+		display: none;
+		text-align: bottom;
+		margin-top: 110px;
+		margin-left: -120px;
+		background-color: red;
+		width:140px;
+	} 
+	.panel5 .s6:hover .n6{
+		display: block;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.panel5 .s6:hover{
+		box-shadow: 0px 8px 16px 0px;
+		background-color: white;
+	}
+  .panel5 .s6 button{
+  	position: absolute;
+  	background:none;
+  	outline: none;
+  	text-align: center;
+  	padding: 5px 8px;
+  	margin-top: 50px;
+  	margin-left: -20px;
+  	font-weight:100px;
+  }
+  .panel5 .s6 button:hover{
+  	background-color: red;
+  	color: white;
+  	font-size: courier;
+  }
+
+  .panel5 .s7{
+		position: absolute;
+		display: inline;
+		width: 180px;
+		height: 180px;
+		text-align: center;
+		color: black;
+		float: left;
+		margin-left: 465px;
+		margin-top: 70px;
+	}
+	.panel5 .s7 img{
+		border-image: center;
+		margin-top: 10px;
+	}
+	.panel5 .n7{
+		position: absolute;
+		display: none;
+		text-align: bottom;
+		margin-top: 110px;
+		margin-left: -120px;
+		background-color: red;
+		width:140px;
+	} 
+	.panel5 .s7:hover .n7{
+		display: block;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.panel5 .s7:hover{
+		box-shadow: 0px 8px 16px 0px;
+		background-color: white;
+	}
+  .panel5 .s7 button{
+  	position: absolute;
+  	background:none;
+  	outline: none;
+  	text-align: center;
+  	padding: 5px 8px;
+  	margin-top: 50px;
+  	margin-left: -20px;
+  	font-weight:100px;
+  }
+  .panel5 .s7 button:hover{
+  	background-color: red;
+  	color: white;
+  	font-size: courier;
+  }
+
+	.panel6{
+		position: absolute;
+		width:97%;
+		height:65%;
+		box-shadow: 0px 16px 16px 0px rgba(120,120,120,120);
+		margin-top: 3690px;
+		margin-left: 1%;
+		background-color: purple;
+		border-left: 10px solid red;
+	}
+	
+	.panel6_content1{
+		position: absolute;
+		float: left;
+		width:60%;
+		height: 100%;
+		background-color: #333;
+		text-align: center;
+		color: white;
+	}
+	.panel6_content1 li{
+		margin:-5px;
+		text-align: left;
+		border-radius: 20px;
+		padding: 5px 5px;
+		color: white;
+	}
+	.panel6_content1 li:hover{
+		box-shadow: 0px 8px 16px 0px;
+	}
+	.panel6_content1 li a{
+		color: white;
+		font-family: coureir;
+		border: none;
+		outline: none;
+		font-size: 17px;
+	}
+
+	.panel6_content2{
+		position:absolute;
+		width:40%;
+		height: 100%;
+		background-color:white;
+		text-align: center;
+		color: white;
+		float: right;
+		margin-left: 60%;
+	}
+	.panel7{
+		position: absolute;
+		width:98%;
+		height:70%;
+		box-shadow: 0px 16px 16px 0px rgba(120,120,120,120);
+		margin-top: 4350px;
+		margin-left: 1%;
+		background-color: blue;
+	}
+
+.footer1{
+	position: absolute;
+	background-color: #333;
+	width: 100%;
+	height: 65%;
+	margin-top:4900px;
+	margin-left: -10px;
+	border-top: 5px solid yellow;
+	text-align: center;
+}
+.fpanel1{
+	position: absolute;
+	width: 200px;
+	height: 100%;
+	background-color: #333;
+	float: left;
+	margin-left: 20px;
+}
+.fpanel1 h2{
+	text-align: center;
+	background-color: #333;
+	color: white;
+}
+.fpanel1 footer{
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	margin-top:5px;
+	
+}
+.fpanel1 a{
+	text-decoration: none;
+	display: block;
+	color: white;
+}
+.fpanel1 footer a:hover{
+	background-color: #ddd;
+	color: black;
+}
+.fpanel2{
+	position: absolute;
+	width: 400px;
+	height: 100%;
+	background-color: #333;
+	float: left;
+	margin-left: 250px;
+}
+.fpanel2 h2{
+	text-align: center;
+	background-color: #333;
+	color: white;
+}
+.fpanel2 footer{
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	margin:5px;
+}
+.fpanel2 a{
+	text-decoration: none;
+	display: block;
+	color: white;
+}
+.fpanel2 footer a:hover{
+	background-color: #ddd;
+	color: black;
+}
+.fpanel3{
+	position: absolute;
+	width: 400px;
+	height: 100%;
+	background-color: #333;
+	float: left;
+	margin-left: 650px;
+}
+.fpanel3 h2{
+	text-align: center;
+	background-color: #333;
+	color: white;
+}
+.fpanel3 footer{
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	margin:5px;
+}
+.fpanel3 a{
+	text-decoration: none;
+	display: block;
+	color: white;
+}
+.fpanel3 footer a:hover{
+	background-color: #ddd;
+	color: black;
+}
+.fpanel4{
+	position: absolute;
+	width: 200px;
+	height: 100%;
+	background-color: #333;
+	float: right; 
+	display:block;
+	margin-left: 1100px;
+}
+.fpanel4 h2{
+	text-align: center;
+	background-color: #333;
+	color: white;
+}
+.fpanel4 footer{
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	margin: 20px;
+}
+.fpanel4 footer a{
+	text-decoration: none;
+	display: block;
+	color: white;
+}
+.fpanel4 footer a:hover{
+	background-color:#ddd;
+	color: black;
+}
+     .fpanel4 .sm a{
+     		position: absolute;
+     		display: inline-block;
+     	}
+     .fpanel4 .sm a li{
+     		display: inline;
+     	}
+     </style>
+   
+<body>
+<div class="panel1">
+
+  <div class="dropdown">
+  	<button class="dropbtn1">ADMISSION</button>
+  		<div class="dropdown-content">
+  			<a href="https://aktu.ac.in/">AKTU University</a>
+  			<a href="http://www.du.ac.in/du/uploads/COVID-19/admissions.html">DU University</a>
+  			<a href="https://mitadmissions.org/apply/">MIT University</a>
+  			<a href="https://www.ox.ac.uk/admissions">OXFORD University</a>
+  			<a href="https://vit.ac.in/admissions/">VIT University</a>
+  			<a href="https://kiit.ac.in/admission/">KIIT University</a>
+  			<a href="https://mu.ac.in/admission">BUMBAI University</a>
+  			<a href="http://online.smsvaranasi.com/">SMS University</a>
+  			<a href="http://www.vbspu.ac.in/admission-4/">VBSPU University</a>
+  			<a href="http://allduniv.ac.in/home/pages/176">ALLAHABAD University</a>
+  			<a href="http://www.kanpuruniversity.org/direct-admission.htm">KANPUR University</a>
+  			<a href="http://ddugu.ac.in/">GORAKHPUR University</a>
+  			<a href="https://bangaloreuniversity.ac.in/pg-admissions/">BANGLORE University</a>
+
+  		</div>
+   </div>
+   <div class="dropdown2">
+  	<button class="dropbtn2">FACILITIES</button>
+  		<div class="dropdown-content2">
+  			<a href="https://www.makemytrip.com/holidays-international/london-vacation-tour-packages.html">trip to london</a>
+  			<a href="https://in.bookmyshow.com/varanasi/movies">movies tiket</a>
+  			<a href="https://www.hellotravel.com/stories/top-world-tour-packages-with-price">world tour</a>
+  		</div>
+   </div>
+    <div class="dropdown3">
+  	<button class="dropbtn3">SCHOLARSHIP</button>
+  		<div class="dropdown-content3">
+  			<strong>For ST,SC,General Category(Fresh)</strong>
+  			<a href="http://164.100.181.104/RegistrationNew.aspx">Prematric (Fresh)</a>
+  			<a href="http://164.100.181.104/RegistrationNew.aspx">Postmatric Intermediate (Fresh)</a>
+  			<a href="http://164.100.181.104/RegistrationNew.aspx">Postmatric Other Than Intermediate (Fresh)</a>
+  			<a href="http://164.100.181.104/RegistrationNew.aspx">Postmatric Other State (Fresh)</a>
+  			<hr>
+  			<strong>For OBC Category(Fresh)</strong>
+  			<a href="http://164.100.181.104/RegistrationNew.aspx">Prematric (Fresh)</a>
+  			<a href="http://164.100.181.104/RegistrationNew.aspx">Postmatric Intermediate (Fresh)</a>
+  			<a href="http://164.100.181.104/RegistrationNew.aspx">Postmatric Other Than Intermediate (Fresh)</a>
+  			<hr>
+  			<strong>For Minority Category(Fresh)</strong>
+  			<a href="http://164.100.181.104/RegistrationNew.aspx">Prematric (Fresh)</a>
+  			<a href="http://164.100.181.104/RegistrationNew.aspx">Postmatric Intermediate (Fresh)</a>
+  			<a href="http://164.100.181.104/RegistrationNew.aspx">Postmatric Other Than Intermediate (Fresh)</a>
+  		</div>
+   </div>
+   <div class="dropdown4">
+  	<button class="dropbtn4">CONDING</button>
+  		<div class="dropdown-content4">
+  			<a href="pdfdata\c.pdf">C language</a>
+  			<a href="pdfdata\C++.pdf">C++ language</a>
+  			<a href="pdfdata\JFXST.pdf">JAVAFX</a>
+  			<a href="pdfdata\python.pdf">PYTHON</a>
+  			<a href="pdfdata\php_tutorial.pdf">PHP</a>
+  			<a href="pdfdata\html-standard.pdf">HTML</a>
+  			<a href="pdfdata\CSS.pdf">CSS</a>
+  			<a href="pdfdata\javascript_tutorial.pdf">JAVASCRIPT</a>
+  			<a href="pdfdata\perl_tutorial.pdf">PERL</a>
+  		</div>
+   </div>
+    <div class="dropdown5">
+  	<button class="dropbtn5">RESULTS</button>
+  		<div class="dropdown-content5">
+  			<a href="https://ug_students_result/">UG Students</a>
+  			<a href="https://pg_students_result/">PG Students</a>
+  			<a href="https://other_students_result/">Other</a>
+  		</div>
+   </div>
+    <div class="dropdown6">
+  	<button class="dropbtn6">NEWS</button>
+  		<div class="dropdown-content6">
+  			<a href="https://aajtak.intoday.in/livetv/">Aaj Tak News</a>
+  			<a href="https://news.sky.com/watch-live">Sky News</a>
+  			<a href="https://hindi.news24online.com/live-tv/">News24 News</a>
+  			<a href="https://www.abplive.com/live-tv">ABP News</a>
+  			<a href="https://www.news18.com/livetv/">CNN News</a>
+  			<a href="https://www.geo.tv/">Geo News</a>
+  		</div>
+   </div>
+   <div class="dropdown7">
+  	<button class="dropbtn7">CONTEST</button>
+  		<div class="dropdown-content7">
+  			<strong>INTERNATIONAL</strong>
+  			<a href="http://www.lahdenmuseot.fi/museot/en/poster-museum/">The Lahti Poster Triennial 202</a>
+  			<a href="https://www.photocrowd.com/photo-competitions/photography-awards/">Bug Photographer of the Year 2020</a>
+  			<a href="https://www.conradchallenge.org/2020-innovation-summit">2020 Virtual Innovation</a>
+  		</div>
+   </div>
+     <div class="dropdown8">
+  	<button class="dropbtn8">EXAMINATION</button>
+  		<div class="dropdown-content8">
+  			<a href="http://ugexam.puchd.ac.in/">UG </a>
+  			<a href="http://pgexam.puchd.ac.in/">PG </a>
+  			<a href="https://www.careerindia.com/entrance-exam/">Other</a>
+  		</div>
+   </div>
+  <!-- <div class="core3">
+	<input type="submit" name="submit" value="OK" style="border-radius: 38px;width: 38px;height: 38px;font-size: 18px;text-align: center;transition-delay: 2s;background-image: linear-gradient(red,white,green);margin-top: 2px;">
+	<input type="text" name="text" placeholder="search" style="border-radius: 35px;width: 140px;height: 35px;top:-41px;margin-left: 40px;font-size: 18px;text-align: center;transition-duration:10s;">
+</div>-->
+</div>
+<div class="panel2">
+	<!--<a href="https://www.researchgate.net/search?q=DBMS"><img src="sem41.jpg" width="100%" height="250px"></a>-->
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1/6</div>
+  <a href="https://www.photocrowd.com/photo-competitions/photography-awards/bpa-2020/"><img src="image\Luminar_Bug _Photography_Award.png" width="100%" height="250px;"></a>
+  <div class="text">LuminarBugPhotography</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2/6</div>
+  <a href="https://coins.secure-platform.com/a/"><img src="image\coins_grand_challenge.jpg" width="100%" height="250px;"></a>
+  <div class="text">coins_grand_challenge</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3/6</div>
+  <a href="https://www.conradchallenge.org/2020-innovation-summit"><img src="image\Conrad-chalenge.jpg" width="100%" height="250px;"></a>
+  <div class="text">Conrad-chalenge</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4/6</div>
+  <a href="https://fentressglobalchallenge.com/user/register"><img src="image\fentress.jpg" width="100%" height="250px;"></a>
+  <div class="text">Fentress</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5/6</div>
+  <a href="https://www.jumpthegap.net/"><img src="image\jumpthegap.jpg" width="100%" height="250px;"></a>
+  <div class="text">Jumpthegap</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6/6</div>
+  <a href="https://yw217.infusionsoft.app/app/form/2020-shark-tank-entry-form?cookieUUID=05ca1f3f-886a-479a-9941-9c4a646cd544"><img src="image\sharktank2020.jpg" width="100%" height="250px;"></a>
+  <div class="text">Sharktank2020</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+</div>
+<style>
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="para1">
+	<p>
+	<div class="circle1">
+          <div class="t1"></div>
+          <div class="t2"></div>
+          <div class="t3"></div>
+          <div class="t4"></div>
+          <div class="t5"></div>
+          <div class="t6"></div>
+   </div>
+   <h2 style="text-align: center;background-color: red;display: inline-block;margin-left:25%;">The best competitions + pitch contests to apply for in 2020</h2>
+ <p style="margin-left: 10%;margin-right: 10%;margin-top: 3%;font-size: 20px;margin-bottom: 5%;display: inline-block;">The world's largest online platform featuring all major global and local student competitions. Includes business competitions, design, photo & arts competitions, ... companies are organizing competitions that students can participate in. ... Three (3) top finalists will be chosen from the submissions and announced on August .A host of competitions are organised at ISB by Centres of Excellence, students, and the ... ISB Business Simulation Competition 2020January 17 - June 17, 2020 ... business minds, from all over the world to compete & connect READ MORE ... a great opportunity for budding managers to spend quality time with top CEOs </p>  
+</p>
+</div>
+<div>
+	<table width="100%" class="panel3">
+		<tr>
+			<td><abbr title="The Conrad Challenge is an annual, multi-phase innovation and entrepreneurship competition that encourages young adults to participate in designing the future. Each year, teams of 2-5 students, ages 13-18, from around the world create products and/or services to address some of the most pressing global and local challenges. They become entrepreneurial problem-solvers, addressing challenging social, scientific and societal issues through utilizing their creativity and critical-thinking skills" style="max-width: 200px;height: auto;"><a href="https://www.conradchallenge.org/2020-innovation-summit"><img src="image\Conrad-chalenge.jpg" width="200px" height="200px"></a>.</abbr><span>Beggining:<date>01/07/2020</date>&End:<date>15/02/2021</date>
+			</span><p>Conrad Challenge 2020</p></td>
+			<td><abbr title="Enter this inaugural year of the Luminar Bug Photography Awards - showcasing the best invertebrates photography from around the world, and raising vital funds for invertebrate conservation with our partner, Buglife.10 categories for all to enter, and a Young Bug Photographer category for those aged 13-17.The grand prize winner takes home £2,500 cash and the title of ‘Bug Photographer of the Year 2020’.They will be announced on 21st October 2020."><a href="https://www.photocrowd.com/photo-competitions/photography-awards/bpa-2020/"><img src="image\Luminar_Bug _Photography_Award.png" width="200px" height="200px"></a></abbr><span>Beggining:<date>1/02/2020</date>&End:<date>16/7/2020</date>
+			</span><p>Luminar Bug Photography Award 2020</p></td>
+
+			<td><abbr title="The Shark Tank of Wellness” competition is a unique global challenge in which university students have the opportunity to submit their most innovative, impactful idea for the wellness industry. The top three finalists will be flown, along with their professors, to the annual Global Wellness Summit (GWS), held November 10–13, 2020, in Tel Aviv, Israel, where they will present their business idea."><a href="https://yw217.infusionsoft.app/app/form/2020-shark-tank-entry-form?cookieUUID=05ca1f3f-886a-479a-9941-9c4a646cd544"><img src="image\sharktank2020.jpg" width="200px" height="200px"></a></abbr><span>Beggining:<date>01/01/2020</date>&End:<date>15/7/2020</date>
+			</span><p>Shark Tank of Welleness 2020</p></td>
+
+			<td><abbr title="Fentress Global Challenge (FGC) is an annual international student design competition launched in 2011 by Curtis Fentress. During the past eight years, it has garnered well over a thousand entries from student teams residing in more than 75 countries.Announcement of the competition generally occurs in the summer, with submissions the following summer. The top prize includes US$10,000 cash and the opportunity to accompany Curt Fentress to a prestigious architectural event where you will receive your award. "><a href="https://fentressglobalchallenge.com/user/register"><img src="image\fentress.jpg" width="200px" height="200px"></a></abbr><span>Beggining:<date>01/1/2020</date>&End:<date>31/07/2020</date>
+			</span><p>Fentress Global Challenge</p></td>
+		</tr>
+				<tr>
+			<td><abbr title="Prizes :COINS Investment Prize: Up to $150,000|Open Winner: $6,000|Open Runner Up: $3,000|Undergraduate Winner:$4,000|Undergraduate Runner Up: $2,000|COINS Software Innovation Prize.|Our judges are industry professionals.Finalists in the Grand Challenge will have the opportunity to network with some of the most prominent professionals in the construction industry. "><a href="https://coins.secure-platform.com/a/"><img src="image\coins_grand_challenge.jpg" width="200px" height="200px"></a></abbr><span>Beggining:<date>11/11/2019</date>&End:<date>16/7/2020</date>
+			</span><p>COINS Grand Challenge 2020</p></td>
+			<td><abbr title="HackerRank is a place where programmers from all over the world come together to solve problems in a wide range of Computer Science domains such as algorithms, machine learning, or artificial intelligence, as well as to practice different programming paradigms like functional programming."><a href="https://www.hackerrank.com/auth/login"><img src="image\hackerrank.png" width="200px" height="200px"></a></abbr><span>Beggining:<date>8/08/2020</date>&End:<date>21/09/2020</date>
+			</span><p>HACKER Rank</p></td>
+			<td><abbr title="CodeChef is a competitive programming website. It is a non-profit educational initiative of Directi,[1][2][3] aimed at providing a platform for students, young software professionals to practice, hone their programming skills through online contests[4] Apart from this, the 'CodeChef For Schools' program aims to reach out to young students and inculcate a culture of programming in Indian schools"><a href="https://www.codechef.com/signup"><img src="image\codechief.png" width="200px" height="200px"></a></abbr><span>Beggining:<date>8/08/2020</date>&End:<date>21/9/2020</date>
+			</span><p>CODE Chief</p></td>
+			<td><abbr title="The 2020 edition of International English Olympiad by 'H First' will be at a much bigger scale than the previous ones. We are looking at over 1 Lakh students from around the world participating in the competition to win recognition at national and international levels. In addition, there would be other rewards like Full Scholarship to all courses run by H First for the next one year, Gift Certificates, Free E-Books, and a lot more educational aids."><a href="https://www.hfirst.in/ieo-2020?utm_source=International_English_Olympiad_2020_D2C&utm_medium=listing&utm_campaign=Dare2Compete"><img src="image\competition_03.jpg" width="200px" height="200px"></a></abbr><span>Beggining:<date>8/08/2020</date>&End:<date>21/9/2020</date>
+			</span><p>International English Olympiad 2020</p></td>
+		</tr>
+				<tr>
+			<td><abbr title="jumpthegap® is a biennial International Design Contest promoted by Roca since 2004 with the collaboration of BcD Barcelona Design Center and aimed at creative people who think towards the future, whilst designing today."><a href="https://www.jumpthegap.net/"><img src="image\jumpthegap.jpg" width="200px" height="200px"></a></abbr><span>Beggining:<date>8/08/2020</date>&End:<date>21/09/2020</date>
+			</span><p>Jumpthegap International Design Contest</p></td>
+			<td><abbr title="CodePen is an online community for testing and showcasing user-created HTML, CSS and JavaScript code snippets. It functions as an online code editor and open-source learning environment, where developers can create code snippets, called pens , and test them."><a href="https://codepen.io/login"><img src="image\maxresdefault.jpg" width="200px" height="200px"></a></abbr><span>Beggining:<date>8/08/2020</date>&End:<date>21/09/2020</date>
+			</span><p>Codepen Challenge</p></td>
+			<td><abbr title="JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions."><a href="https://javascript.info/"><img src="image\js.png" width="200px" height="200px"></a></abbr><span>Beggining:<date>8/08/2020</date>&End:<date>21/09/2020</date>
+			</span><p>Javascript</p></td>
+			<td><abbr title="Java was designed to have the look and feel of the C++ programming language, but is simpler to use and enforces an object-oriented programming model. Java can be used to create complete applications that may run on a single computer or be distributed among servers and clients in a network."><a href="https://www.javatpoint.com/java-tutorial"><img src="image\java.png" width="200px" height="200px"></a></abbr><span>Beggining:<date>8/08/2020</date>&End:<date>21/09/2020</date>
+			</span><p>Java Language</p></td>
+		</tr>
+	</table>
+</div>
+<div class="para2">
+	<p>
+	<div class="tri2">
+          <div class="t10"></div>
+          <div class="t20"></div>
+          <div class="t30"></div>
+          <div class="t40"></div>
+          <div class="t50"></div>
+          <div class="t60"></div>
+   </div>
+   <h2 style="text-align: center;background-color: red;display: inline-block;">STORES ,ARTS , AND CHALLENGES OVER  THE WORLD</h2>
+   <p style="margin-left: 10%;margin-right: 10%;margin-top: 3%;font-size: 20px;margin-bottom: 5%;display: inline-block;">Artists Network Competitions focus on a wide range of media, subjects and styles—oil, acrylic, drawing, pastel, watercolor, animals, people, abstracts, still life, landscapes and more. Enter any of our fine art contests to get published in our magazines and noticed by art enthusiasts around the world. You can also win cash prizes and merchandise.Get your creative juices flowing by participating in our exciting Design Challenges. Take inspiration from especially curated themes, brainstorm new ideas, create innovative designs/artworks, and bring your ideas to life.Connect with and join the ever-growing community of artists from around the globe.Gain Access to the Challenge Rewards- Stand a chance to win cash prizes, gift cards, and much more.Get featured in our Designhill blogs and earn global recognition for your work.We're already almost halfway through 2020, but fortunately, the publishing industry has been keeping pace with the passage of time, with a slew of the year’s most anticipated titles already out, and many more on the way. If you’re looking to make a dent in your GoodReads goal for the year, keep an eye on this list of the top 27 new books to watch out for in 2020. </p>  
+</p>
+</div>
+<style type="text/css">
+	.para2 h2{
+		display: inline-block;
+		text-align: center;
+		margin-left:25%;
+	}
+</style>
+<div class="panel4">
+	<table width="100%">
+		<tr>
+			<td>
+				<div class="panel4-heading"><strong>Store</strong></div>
+				<a href="https://www.researchgate.net/publication/320708623_Online_Bookstore_-_A_New_Trend_in_Textbook_Sales_Management_for_Services_Marketing"><img src="image\study1.jpg"></a>
+			</td>
+			<td>
+				<div class="panel4-heading"><strong>Art</strong></div>
+				<a href="https://www.mojarto.com/artworks"><img src="image\sem41.jpg"></a>
+			</td>
+			<td>
+				<div class="panel4-heading"><strong>Challenge</strong></div>
+				<a href="https://www.conradchallenge.org/challenge-categories"><img src="image\sem43.png"></a>
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="dilpanel">
+	<iframe src="dil.html" style="border:2px solid red;" width="500px" height="300px"></iframe>
+</div>
+<div class="panel5">
+	<h1>EXECUTIVE MEMBERS OF OURS</h1>
+	<span class="s1"><img src="image\v9.jpg" width="140px" height="130px" style="border-radius: 100px;"><strong class="n1">VISHVAJEET</strong><br><a href=""><button>More</button></a></span>
+	<span class="s2"><img src="image\vish1.jpg" width="140px" height="130px" style="border-radius: 100px;"><strong class="n2">VISHVAJEET</strong><br><a href=""><button>More</button></a></span>
+	<span class="s3"><img src="image\vish2.jpg" width="140px" height="130px" style="border-radius: 100px;"><strong class="n3">VISHVAJEET</strong><br><a href=""><button>More</button></a></span>
+	<span class="s4"><img src="image\vish4.jpg" width="140px" height="130px" style="border-radius: 100px;"><strong class="n4">VISHVAJEET</strong><br><a href=""><button>More</button></a></span>
+	<span class="s5"><img src="image\vish5.jpg" width="140px" height="130px" style="border-radius: 100px;"><strong class="n5">VISHVAJEET</strong><br><a href=""><button>More</button></a></span>
+	<span class="s6"><img src="image\vish6.jpg" width="140px" height="130px" style="border-radius: 100px;"><strong class="n6">VISHVAJEET</strong><br><a href=""><button>More</button></a></span>
+	<span class="s7"><img src="image\vish7.png" width="140px" height="130px" style="border-radius: 100px;"><strong class="n7">VISHVAJEET</strong><br><a href=""><button>More</button></a></span>
+</div>
+
+<div class="panel6">
+	<span class="panel6_content1">
+		<span><h1>TOP INSTITUTES ORAGNISE CONTESTS OVER THE WORLD</h1></span>
+		<ul>
+			<li><abbr title="Sign up opens on January 5th, 2020. Stay up to date with future news by checking our webpage and submitting your email address below.
+            There is no sign up fee for participating. As a finalist, all expenses, including flight tickets, accommodation, and food, are covered by CBS Case Competition."><a href="https://www.casecompetition.com">GLOBAL 2020 is open to undergraduate and graduate students from across the globe.</a></abbr></li>
+			<li><abbr title="Showcase your financial skill, network with industry professionals, and win a $10,000 cash prize!
+            All participants are sent a case and have three weeks to solve it. Then, the top 10 teams are invited to share their solution on Harvard Campus in April 2020 in front of a panel of judges."><a href="http://harvardcasecompetition.com">Harvard global finance case competition</a></abbr></li>
+			<li><abbr title="Help tackle the toughest agrifood challenges and play your part in producing Food for the Future! With Rotterdam as your stage, the case competition gives you a great opportunity to:
+            learn by solving a real-life business case;
+            network with professionals, industry leaders, academics and other students in the agrifood industry community
+            get inspired by attending the 30th IFAMA conference at the most innovative food hub in the Netherlands and home of the biggest port in Europe.
+            Team registration opens in the beginning of December 2019 and closes 16 March 2020."><a href="https://ifama2020.org/student-case-competition/">IFAMA 2020 Student Case Competition</a></abbr></li>
+			<li><abbr title="The CFO (Chief Financial Officer) is an annual, open-entry, and global multi-stage business strategy and leadership-focused case study competition, organised by The CharterQuest Institute South Africa. It challenges university students around the world to prove they can compete at the highest level: by solving a set of complex and integrated finance, operational, strategic and ethical problems that beset a real-world global business in the emerging markets.
+            Entry deadline: 31 March 2020"><a href="https://www.charterquest.co.za/the-cfo">CFO Case Study Competition</a></abbr></li>
+			<li><abbr title="Compete in the planet’s largest student competition to solve the world’s toughest challenges. The Hult Prize Foundation is a start-up accelerator for budding young social entrepreneurs emerging from the world’s universities. Hult Prize aims to identify and launch the most compelling social business ideas – start-up enterprises that tackle grave issues faced by billions of people. Winners receive USD 1 million in seed capital, as well as mentorship and advice from the international business community."><a href="http://www.hultprize.org/challenge/">Hult Prize</a></abbr></li>
+			<li><abbr title="Be part of an award-winning international student competition.
+           The Risk Management Challenge, a case competition of the PRMIA Institute, empowers undergraduate and graduate students by taking them beyond the classroom and giving them exposure to real-world business situations.
+           The Challenge offers students the opportunity to apply the concepts they have learned and showcase their knowledge, critical thinking skills, leadership, and presentation abilities.
+          Entry deadline: 6 January 2020"><a href="https://www.prmia.org/prmia-risk-management-challenge"> PRMIA Risk Management Challenge</a></abbr></li>
+			<li><abbr title="The John Molson MBA International Case Competition is a not-for-profit event organised by a team of MBA students from the John Molson School of Business at Concordia University in Montreal, Canada. The competition is open to top business schools worldwide, and is recognised as the largest case competition of its kind. Its main purpose is to bridge the gap between corporate and academic worlds, which ultimately enriches both students and executives alike."><a href="http://mbacasecomp.com/"> John Molson MBA International Case Competition</a></abbr></li>
+			<li><abbr title="Deadline: March 18, 2020 (preliminary deadlines depend on your location)
+            The way the competition works:
+            ▸Build an amazing team of 3 superheroes to solve the mission.
+            ▸Come up with the most innovative idea, sharpen it throughout the selection process and become the champion of your country.
+            ▸Fly to Paris, immerse yourself at L’Oréal’s headquarters and pitch your innovation to top L’Oréal executives."><a href="https://brandstorm.loreal.com/">L’Oreal Brandstorm</a></abbr></li>
+			<li><abbr title="This 4-day competition will give you the chance to learn, explore, network and compete against the best students around the world. Who will be the KICC Global Champions? It could be you!
+ 
+            Are you ready to make an impact? Stay tuned for details regarding the 2020 competition "><a href="https://home.kpmg/xx/en/home/careers/graduates/kpmg-international-case-competition/the-competition.html">KPMG’s Case Competition is a world-class forum for students from across the globe.</a></abbr></li>
+			<li><abbr title=" A competition which will test your aptitude for business strategy and real-life problem-solving. If you’ve been eager to demonstrate your ingenuity and intelligence beyond your campus, this is the chance to make an impression on a global scale.
+            Prepare to compete with teams from around the world to see who is most fit to be the next CEO of P&G. Top students will ascend to the Global Final in Mexico City and win the opportunity to meet P&G CEO David Taylor. First, prepare to showcase your ability to think critically about leading a brand. Best of luck!"><a href="https://www.pg-ceochallenge.com">P&G CEO Challenge</a></abbr></li>
+			<li><abbr title="Cisco Global Problem Solver Challenge aims to recognize new business ideas that leverage technology for social impact from student entrepreneurs around the world. The Challenge is open to students and recent alumni from any college or university.
+            $350,000 USD in prize money will help accelerate the adoption of breakthrough technology, products, and services that drive economic development and/or solve social or environmental problems.
+            Submit your solution by January 17, 2020 at 5pm PT."><a href="https://cisco.innovationchallenge.com">Cisco Global Problem Solver Challenge </a></abbr></li>
+</ul>			
+	</span>
+	<span class="panel6_content2">
+		<abbr title="california-institute-of-technology-calteimage\"><img src="image\california-institute-of-technology-caltech.jpg" width="80px" height="80px"></abbr>
+		<abbr title="columbia-university"><img src="image\columbia-university.jpg" width="80px" height="80px"></abbr>
+		<abbr title="cornell-university"><img src="image\cornell-university.jpg" width="80px" height="80px"></abbr>
+		<abbr title="duke-university"><img src="image\duke-university.jpg" width="80px" height="80px"></abbr>
+		<abbr title="eth-zurich-swiss-federal-institute-of-technology"><img src="image\eth-zurich-swiss-federal-institute-of-technology.jpg" width="80px" height="80px"></abbr>
+		<abbr title="harvard-university"><img src="image\harvard-university.jpg" width="80px" height="80px"></abbr>
+		<abbr title="imperial-college-london"><img src="image\imperial-college-london.jpg" width="80px" height="80px"></abbr>
+		<abbr title="johns-hopkins-university"><img src="image\johns-hopkins-university.jpg" width="80px" height="80px"></abbr>
+		<abbr title="massachusetts-institute-of-technology-MIT"><img src="image\massachusetts-institute-of-technology-MIT.jpg" width="80px" height="80px"></abbr>
+		<abbr title="nanyang-technological-university-singapore-ntu"><img src="image\nanyang-technological-university-singapore-ntu.jpg" width="80px" height="80px"></abbr>
+		<abbr title="national-university-of-singapore-nus"><img src="image\national-university-of-singapore-nus.jpg" width="80px" height="80px"></abbr>
+		<abbr title="peking-university"><img src="image\peking-university.jpg" width="80px" height="80px"></abbr>
+		<abbr title="princeton-university"><img src="image\princeton-university.jpg" width="80px" height="80px"></abbr>
+		<abbr title="stanford-university"><img src="image\stanford-university.jpg" width="80px" height="80px"></abbr>
+		<abbr title="the-university-of-edinburgh"><img src="image\the-university-of-edinburgh.jpg" width="80px" height="80px"></abbr>
+		<abbr title="the-university-of-tokyo"><img src="image\the-university-of-tokyo.jpg" width="80px" height="80px"></abbr>
+		<abbr title="tsinghua-university"><img src="image\tsinghua-university.jpg" width="80px" height="80px"></abbr>
+		<abbr title="UCL"><img src="image\ucl.jpg" width="80px" height="80px"></abbr>
+		<abbr title="university-of-cambridge"><img src="image\university-of-cambridge.jpg" width="80px" height="80px"></abbr>
+		<abbr title="university-of-chicago"><img src="image\university-of-chicago.jpg" width="80px" height="80px"></abbr>
+		<abbr title="university-of-michigan"><img src="image\university-of-michigan.jpg" width="80px" height="80px"></abbr>
+		<abbr title="university-of-oxford"><img src="image\university-of-oxford.jpg" width="80px" height="80px"></abbr>
+		<abbr title="university-of-pennsylvania"><img src="image\university-of-pennsylvania.jpg" width="80px" height="80px"></abbr>
+		<abbr title="yale-university"><img src="image\yale-university.jpg" width="80px" height="80px"></abbr>
+		<abbr title="delft-university-of-technology"><img src="image\delft-university-of-technology.jpg" width="80px" height="80px"></abbr>
+		<abbr title="fudan-university"><img src="image\fudan-university.jpg" width="80px" height="80px"></abbr>
+		<abbr title=graduate-school-of-business-seoul-national-university"><img src="image\graduate-school-of-business-seoul-national-university.jpg" width="80px" height="80px"></abbr>
+		<abbr title="the-australian-national-university"><img src="image\the-australian-national-university.jpg" width="80px" height="80px"></abbr>
+		<abbr title="kaist-korea-advanced-institute-of-science-technology"><img src="image\kaist-korea-advanced-institute-of-science-technology.jpg" width="80px" height="80px"></abbr>
+		<abbr title="the-university-of-new-south-wales-unsw-sydney"><img src="image\the-university-of-new-south-wales-unsw-sydney.jpg" width="80px" height="80px"></abbr>
+	</span>
+</div>
+
+<div class="panel7">
+	<iframe src="https://aajtak.intoday.in/livetv/" width="100%" height="100%"></iframe>
+	
+</div>
+
+<div class="footer1">
+     <div class="fpanel1">
+     	<h2>Get To Know Us</h2>
+      <footer><a href="#Ab">About Us</a></footer>
+      <footer><a href="#ca">Careers</a></footer>
+      <footer><a href="#pr">Press Releases</a></footer>
+      <footer><a href="#oc">Our Care</a></footer>
+      <footer><a href="#gs">Gift a Smile</a></footer>
+      <footer><a href="#ct">Client Tour</a></footer>
+      <footer><a href="#t">Tranning</a></footer>
+     </div>
+     <div class="fpanel2">
+     	<h2>Contact Us</h2>
+      <footer><a href="#c9a">Covid-19 And Us</a></footer>
+      <footer><a href="#yt">Your Talents</a></footer>
+      <footer><a href="#rc">Returns Center</a></footer>
+      <footer><a href="#100p">100% Perchase Protection</a></footer>
+      <footer><a href="#syr">Show Your Resume</a></footer>
+      <footer><a href="#ad">Assistance Download</a></footer>
+      <footer><a href="#h">Help</a></footer> 
+     </div>
+       <div class="fpanel3">
+     	<h2>Make Money With Us</h2>
+      <footer><a href="#so">Sell on OurSite</a></footer>
+      <footer><a href="#sup">Sell Under Project Accelerator</a></footer>
+      <footer><a href="#ba">Became An Affiliate</a></footer>
+      <footer><a href="#fb">Fullfilment By Us</a></footer>
+      <footer><a href="#ayp">Advertise Your Products</a></footer>
+      <footer><a href="#wp">We Pay On Merchants</a></footer>
+      <footer><a href="#pg">Partnership Get With us</a></footer>
+     </div>
+       <div class="fpanel4">
+       	<h2>Connect With Us</h2>
+      <footer class="sm"><a href="https://www.facebook.com/campaign/landing.php?campaign_id=1653993517&extra_1=s%7Cc%7C318504235901%7Ce%7Cfb%27%27%27%27%7C&placement&creative=318504235901&keyword=fb%27%27%27%27&partner_id=googlesem&extra_2=campaignid%3D1653993517%26adgroupid%3D63066387003%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D1t1%26target%3D%26targetid%3Dkwd-431331345317%26loc_physical_ms%3D1007827%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiAvonyBRB7EiwAadauqdpkvsYeK9u4SnBNUjEbT4fCTN2qBg_MmDwffMi9IJWR-Iyl-exrBhoCtzEQAvD_BwE"><li><img src="image\fb.png" width="20px" height="20px"></li>Facebook</a></footer>
+      <footer class="sm"><a href="https://www.instagram.com/"><li><img src="image\Instagram.png" width="20px" height="20px"></li>Instagram</a></footer>
+      <footer class="sm"><a href="https://twitter.com/login"><li><img src="image\twitter.png" width="20px" height="20px"></li>Twitter</a></footer>
+      <footer class="sm"><a href="https://web.whatsapp.com/"><li><img src="image\whatsapp.png" width="20px" height="20px"></li>Whatsapp</a></footer>
+      <footer class="sm"><a href="https://oauth.telegram.org/auth?bot_id=531675494&origin=https%3A%2F%2Ftelegram.org&embed=1&request_access=write"><li><img src="image\teligrame.png" width="20px" height="20px"></li>Telegram</a></footer>
+      <footer class="sm"><a href="https://www.skype.com/en/"><li><img src="image\skyp.png" width="20px" height="20px"></li>Skyp</a></footer>
+      <footer class="sm"><a href="https://myaccount.google.com/"><li><img src="image\gmail.png" width="20px" height="20px"></li>Gmail</a></footer>
+     </div>
+</div>
+<footer style="position: absolute;margin-top: 5350px;background-color: #ddd;text-align: center;">
+	<div style="text-align: center;margin-left: 500px;">
+	<h3><strong>POWERED BY:</strong>VISHVAJEET CHAUHAN</h3><br>
+	<blockquote>Copy right of 1990 and govt. approved</blockquote><br>
+	<address>City:VARANASI Saket Nagar Sankat Mochan 221005</address>
+</div>
+</footer>
+</body>
+</html>
