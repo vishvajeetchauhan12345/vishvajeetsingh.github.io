@@ -13,13 +13,15 @@ html {
   scroll-behavior: smooth;
 }
 	.panel1{
-		position: absolute;
+		position: fixed;
 		width:100%;
-		height: 8%;
+		height:8%;
 		background: purple;
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		left:0px;
 		top:0px;
+		overflow: visible;
+		display: block;
 	}
 
 .t1{
@@ -397,14 +399,15 @@ html {
 	background-color: white;
 	border-left: 10px solid blue;
 	border-right: 10px solid blue;
-	margin:10%;
+	margin-top:300px;
+	margin-left: 10%;
 	padding: 20px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .para1{
 	position: absolute;
-	margin-top:700px;
+	margin-top:1000px;
 	width: 90%;
 	height: 30%;
 	margin-left: 95px;
@@ -417,7 +420,7 @@ html {
 	width:96%;
 	padding: 20px;
 	background-color: white;
-	margin-top: 1000px;
+	margin-top: 1500px;
 	margin-left:2%;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -467,7 +470,7 @@ td{
 
 .para2{
 	position: absolute;
-	margin-top:2000px;
+	margin-top:2700px;
 	width: 90%;
 	height: 45%;
 	margin-left: 95px;
@@ -564,7 +567,7 @@ td{
 	width:94%;
 	background-color: yellow;
 	padding: 35px;
-	margin-top: 2400px;
+	margin-top: 3300px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .panel4-heading{
@@ -587,7 +590,7 @@ td{
 .dilpanel{
 		position: absolute;
 		padding: 15px;
-		margin-top: 2800px;
+		margin-top: 3900px;
 		margin-left: 30%;
 	}
 
@@ -596,7 +599,7 @@ td{
 		width:98%;
 		height:50%;
 		box-shadow: 0px 16px 16px 0px rgba(120,120,120,120);
-		margin-top: 3200px;
+		margin-top: 4300px;
 		margin-left: 1%;
 		background-color: green;
 		text-align: center;
@@ -958,7 +961,7 @@ td{
 		width:97%;
 		height:65%;
 		box-shadow: 0px 16px 16px 0px rgba(120,120,120,120);
-		margin-top: 3690px;
+		margin-top: 4790px;
 		margin-left: 1%;
 		background-color: purple;
 		border-left: 10px solid red;
@@ -1006,7 +1009,7 @@ td{
 		width:98%;
 		height:70%;
 		box-shadow: 0px 16px 16px 0px rgba(120,120,120,120);
-		margin-top: 4350px;
+		margin-top: 5450px;
 		margin-left: 1%;
 		background-color: blue;
 	}
@@ -1016,10 +1019,11 @@ td{
 	background-color: #333;
 	width: 100%;
 	height: 65%;
-	margin-top:4900px;
+	margin-top:6200px;
 	margin-left: -10px;
 	border-top: 5px solid yellow;
 	text-align: center;
+	border-collapse: collapse;
 }
 .fpanel1{
 	position: absolute;
@@ -1057,7 +1061,7 @@ td{
 	height: 100%;
 	background-color: #333;
 	float: left;
-	margin-left: 250px;
+	margin-left: 200px;
 }
 .fpanel2 h2{
 	text-align: center;
@@ -1086,7 +1090,7 @@ td{
 	height: 100%;
 	background-color: #333;
 	float: left;
-	margin-left: 650px;
+	margin-left: 600px;
 }
 .fpanel3 h2{
 	text-align: center;
@@ -1116,7 +1120,7 @@ td{
 	background-color: #333;
 	float: right; 
 	display:block;
-	margin-left: 1100px;
+	margin-left: 1050px;
 }
 .fpanel4 h2{
 	text-align: center;
@@ -1312,9 +1316,8 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  width: 96%;
   position: relative;
-  margin: auto;
 }
 
 /* Caption text */
@@ -1407,13 +1410,13 @@ function showSlides() {
           <div class="t6"></div>
    </div>
    <h2 style="text-align: center;background-color: red;display: inline-block;margin-left:25%;">The best competitions + pitch contests to apply for in 2020</h2>
- <p style="margin-left: 10%;margin-right: 10%;margin-top: 3%;font-size: 20px;margin-bottom: 5%;display: inline-block;">The world's largest online platform featuring all major global and local student competitions. Includes business competitions, design, photo & arts competitions, ... companies are organizing competitions that students can participate in. ... Three (3) top finalists will be chosen from the submissions and announced on August .A host of competitions are organised at ISB by Centres of Excellence, students, and the ... ISB Business Simulation Competition 2020January 17 - June 17, 2020 ... business minds, from all over the world to compete & connect READ MORE ... a great opportunity for budding managers to spend quality time with top CEOs </p>  
+ <p style="margin-left: 10%;margin-right: 10%;margin-top: 3%;font-size: 20px;margin-bottom: 5%;display: inline-block;align-content: initial;">The world's largest online platform featuring all major global and local student competitions. Includes business competitions, design, photo & arts competitions, ... companies are organizing competitions that students can participate in. ... Three (3) top finalists will be chosen from the submissions and announced on August .A host of competitions are organised at ISB by Centres of Excellence, students, and the ... ISB Business Simulation Competition 2020January 17 - June 17, 2020 ... business minds, from all over the world to compete & connect READ MORE ... a great opportunity for budding managers to spend quality time with top CEOs </p>  
 </p>
 </div>
 <div>
 	<table width="100%" class="panel3">
 		<tr>
-			<td><abbr title="The Conrad Challenge is an annual, multi-phase innovation and entrepreneurship competition that encourages young adults to participate in designing the future. Each year, teams of 2-5 students, ages 13-18, from around the world create products and/or services to address some of the most pressing global and local challenges. They become entrepreneurial problem-solvers, addressing challenging social, scientific and societal issues through utilizing their creativity and critical-thinking skills" style="max-width: 200px;height: auto;"><a href="https://www.conradchallenge.org/2020-innovation-summit"><img src="image\Conrad-chalenge.jpg" width="200px" height="200px"></a>.</abbr><span>Beggining:<date>01/07/2020</date>&End:<date>15/02/2021</date>
+			<td><abbr title="The Conrad Challenge is an annual, multi-phase innovation and entrepreneurship competition that encourages young adults to participate in designing the future. Each year, teams of 2-5 students, ages 13-18, from around the world create products and/or services to address some of the most pressing global and local challenges. They become entrepreneurial problem-solvers, addressing challenging social, scientific and societal issues through utilizing their creativity and critical-thinking skills"><a href="https://www.conradchallenge.org/2020-innovation-summit"><img src="image\Conrad-chalenge.jpg" width="200px" height="200px"></a>.</abbr><span>Beggining:<date>01/07/2020</date>&End:<date>15/02/2021</date>
 			</span><p>Conrad Challenge 2020</p></td>
 			<td><abbr title="Enter this inaugural year of the Luminar Bug Photography Awards - showcasing the best invertebrates photography from around the world, and raising vital funds for invertebrate conservation with our partner, Buglife.10 categories for all to enter, and a Young Bug Photographer category for those aged 13-17.The grand prize winner takes home £2,500 cash and the title of ‘Bug Photographer of the Year 2020’.They will be announced on 21st October 2020."><a href="https://www.photocrowd.com/photo-competitions/photography-awards/bpa-2020/"><img src="image\Luminar_Bug _Photography_Award.png" width="200px" height="200px"></a></abbr><span>Beggining:<date>1/02/2020</date>&End:<date>16/7/2020</date>
 			</span><p>Luminar Bug Photography Award 2020</p></td>
@@ -1457,7 +1460,7 @@ function showSlides() {
           <div class="t60"></div>
    </div>
    <h2 style="text-align: center;background-color: red;display: inline-block;">STORES ,ARTS , AND CHALLENGES OVER  THE WORLD</h2>
-   <p style="margin-left: 10%;margin-right: 10%;margin-top: 3%;font-size: 20px;margin-bottom: 5%;display: inline-block;">Artists Network Competitions focus on a wide range of media, subjects and styles—oil, acrylic, drawing, pastel, watercolor, animals, people, abstracts, still life, landscapes and more. Enter any of our fine art contests to get published in our magazines and noticed by art enthusiasts around the world. You can also win cash prizes and merchandise.Get your creative juices flowing by participating in our exciting Design Challenges. Take inspiration from especially curated themes, brainstorm new ideas, create innovative designs/artworks, and bring your ideas to life.Connect with and join the ever-growing community of artists from around the globe.Gain Access to the Challenge Rewards- Stand a chance to win cash prizes, gift cards, and much more.Get featured in our Designhill blogs and earn global recognition for your work.We're already almost halfway through 2020, but fortunately, the publishing industry has been keeping pace with the passage of time, with a slew of the year’s most anticipated titles already out, and many more on the way. If you’re looking to make a dent in your GoodReads goal for the year, keep an eye on this list of the top 27 new books to watch out for in 2020. </p>  
+   <p style="margin-left: 10%;margin-right: 10%;margin-top: 3%;font-size: 20px;margin-bottom: 5%;display: inline-block;align-content: initial;">Artists Network Competitions focus on a wide range of media, subjects and styles—oil, acrylic, drawing, pastel, watercolor, animals, people, abstracts, still life, landscapes and more. Enter any of our fine art contests to get published in our magazines and noticed by art enthusiasts around the world. You can also win cash prizes and merchandise.Get your creative juices flowing by participating in our exciting Design Challenges. Take inspiration from especially curated themes, brainstorm new ideas, create innovative designs/artworks, and bring your ideas to life.Connect with and join the ever-growing community of artists from around the globe.Gain Access to the Challenge Rewards- Stand a chance to win cash prizes, gift cards, and much more.Get featured in our Designhill blogs and earn global recognition for your work.We're already almost halfway through 2020, but fortunately, the publishing industry has been keeping pace with the passage of time, with a slew of the year’s most anticipated titles already out, and many more on the way. If you’re looking to make a dent in your GoodReads goal for the year, keep an eye on this list of the top 27 new books to watch out for in 2020. </p>  
 </p>
 </div>
 <style type="text/css">
@@ -1616,7 +1619,7 @@ function showSlides() {
       <footer class="sm"><a href="https://myaccount.google.com/"><li><img src="image\gmail.png" width="20px" height="20px"></li>Gmail</a></footer>
      </div>
 </div>
-<footer style="position: absolute;margin-top: 5350px;background-color: #ddd;text-align: center;">
+<footer style="position: absolute;margin-top: 6750px;background-color: #ddd;text-align: center;">
 	<div style="text-align: center;margin-left: 500px;">
 	<h3><strong>POWERED BY:</strong>VISHVAJEET CHAUHAN</h3><br>
 	<blockquote>Copy right of 1990 and govt. approved</blockquote><br>
